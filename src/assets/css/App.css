@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: var(--font-poppins);
+}
+
+.main_header_shadow {
+  box-shadow: 0 1px 0 0 #e5e5e5;
+}
+
+#menuBar .active {
+  color: var(--color-branding-success);
+}
+#subMenuOptions {
+  color: var(--color-gren-gray-scale-500);
+}
+#subMenuOptions .active {
+  color: var(--color-gren-gray-scale-500);
+}
+#subMenuOptions:hover {
+  color: var(--color-branding-success-dark);
+}
+.bannerBg {
+  background-image: url(/public/images/banner_bg.png);
+}
+.prevArrow,
+.nextArrow {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: var(--color-gray-scale-gray-900);
+  font-size: 18px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px solid var(--color-gray-scale-gray-400);
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.prevArrow{
+  left: 4%;
+}
+.nextArrow{
+  right: 3%;
+}
+.prevArrow:hover,
+.nextArrow:hover {
+  color: var(--color-branding-success);
+  background-color: #00b2061f;
+  border: 1px solid var(--color-branding-success);
+}
+
+.swiper-pagination-bullet{
+  background-color: var(--color-gren-gray-scale-200) !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: var(--color-branding-success) !important;
+}
+
+.featuredProductCardShadow{
+  box-shadow: 0 0 12px 0 rgba(32, 181, 38, 0.32);
+}
+
+.productLinks{
+  display: flex;
+  flex-direction: column;
+}
+.productLinkIcons{
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gray-scale-gray-900);
+  background-color: var(--color-gray-scale-white);
+  border: 1px solid var(--color-gray-scale-gray-50);
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.productLinkIcons:hover{
+  color: var(--color-gray-scale-white);
+  background-color: var(--color-branding-success);
+}

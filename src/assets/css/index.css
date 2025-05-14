@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gren-gray-scale-900: #002603;
+  --color-gren-gray-scale-800: #173b1a;
+  --color-gren-gray-scale-700: #2b572e;
+  --color-gren-gray-scale-600: #406b42;
+  --color-gren-gray-scale-500: #618062;
+  --color-gren-gray-scale-400: #7a997c;
+  --color-gren-gray-scale-300: #96b297;
+  --color-gren-gray-scale-200: #b4ccb4;
+  --color-gren-gray-scale-100: #dae5da;
+  --color-gren-gray-scale-50: #edf2ee;
+  --color-gray-scale-gray-900: #1a1a1a;
+  --color-gray-scale-gray-800: #333;
+  --color-gray-scale-gray-700: #4d4d4d;
+  --color-gray-scale-gray-600: #666;
+  --color-gray-scale-gray-500: #808080;
+  --color-gray-scale-gray-400: #999;
+  --color-gray-scale-gray-300: #b3b3b3;
+  --color-gray-scale-gray-200: #ccc;
+  --color-gray-scale-gray-100: #e5e5e5;
+  --color-gray-scale-gray-50: #f2f2f2;
+  --color-gray-scale-white: #fff;
+  --color-branding-success-bright: #84d187;
+  --color-branding-success: #00b207;
+  --color-branding-success-dark: #2c742f;
+  --color-branding-warning: #ff8a00;
+  --color-branding-error: #ea4b48;
+  --font-poppins: "Poppins", sans-serif;
+  --font-segoe: "Segoe Script", sans-serif;
+  --font-dancing: "Dancing Script", sans-serif;
+}
+
+.container {
+  @apply lg:max-w-[1320px] mx-auto px-[5%] lg:px-0;
+}
+
+.commomBtn {
+  @apply font-semibold text-sm lg:text-[16px] gap-2 lg:gap-4 py-[10px] lg:py-4 px-4 lg:px-10 rounded-[20px] lg:rounded-[53px] inline-flex items-center bg-branding-success leading-[120%] text-gray-scale-white;
+}
+
