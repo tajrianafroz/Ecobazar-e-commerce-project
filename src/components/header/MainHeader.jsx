@@ -7,21 +7,18 @@ import { SlHandbag } from "react-icons/sl";
 import { HiOutlineUser } from "react-icons/hi2";
 import Search from "./../utils/Search";
 import { MdMenuOpen } from "react-icons/md";
-import Offcanvas from './../utils/Offcanvas';
-
+import Offcanvas from "./../utils/Offcanvas";
 
 const MainHeader = () => {
-
   const [showCanvas, setShowCanvas] = useState(false);
 
   const showOffcanvas = () => {
     setShowCanvas(true);
-  }
+  };
 
   const closeOffcanvas = () => {
     setShowCanvas(false);
   };
-
 
   return (
     <nav className="py-5 bg-gray-scale-white main_header_shadow">

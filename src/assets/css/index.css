@@ -30,6 +30,7 @@
   --font-poppins: "Poppins", sans-serif;
   --font-segoe: "Segoe Script", sans-serif;
   --font-dancing: "Dancing Script", sans-serif;
+  --text-shadow-category-box: 0 0 12px 0 rgba(32, 181, 38, 0.32);
 }
 
 .container {
@@ -39,4 +40,3 @@
 .commomBtn {
   @apply font-semibold text-sm lg:text-[16px] gap-2 lg:gap-4 py-[10px] lg:py-4 px-4 lg:px-10 rounded-[20px] lg:rounded-[53px] inline-flex items-center bg-branding-success leading-[120%] text-gray-scale-white;
 }
-

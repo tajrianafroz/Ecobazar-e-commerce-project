@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa";
 const SearchProductCard = ({ product }) => {
   return (
     <div className="productCards">
-      <Link to="" className="grid lg:grid-cols-2 place-items-center">
+      <Link to={`/product/${product.id}`} className="grid lg:grid-cols-2 place-items-center">
         <div className="productImage lg:col-span-1">
           <img className="w-full" src={product?.images[0]} alt="" />
         </div>

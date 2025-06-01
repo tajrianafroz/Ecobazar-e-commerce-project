@@ -11,14 +11,14 @@ const FeaturedProductCard = ({ product }) => {
   return (
     <div className="productCard group hover:border-branding-success hover:featuredProductCardShadow border border-gray-scale-gray-100 rounded-lg bg-gray-scale-white">
       <div className="productImage lg:p-[5px]">
-        <Link to="" className="relative">
+        <Link to={`/product/${product.id}`} className="relative">
           <p className="text-xs lg:text-sm py-[3px] px-1 lg:px-2 inline-block absolute top-4 left-4 rounded leading-[150%] text-gray-scale-white bg-branding-error">
             Sale {product.discountPercentage}%
           </p>
           <img
             loading="lazy"
             className="max-w-full mx-auto"
-            src={product.thumbnail} 
+            src={product.thumbnail}
             alt=""
           />
           <div className="productLinks absolute top-5 right-[-15px] group-hover:right-5 group-hover:opacity-100 group-hover:visible opacity-0 invisible transition-all duration-250">
@@ -34,7 +34,7 @@ const FeaturedProductCard = ({ product }) => {
       <div className="productContent p-2 lg:p-4 grid grid-cols-3 items-center justify-between">
         <div className="details col-span-2 justify-start">
           <Link
-            to=""
+            to={`/product/${product.id}`}
             className="text-sm leading-[150%] text-gray-scale-gray-700 hover:text-branding-success-dark"
           >
             {product.title}

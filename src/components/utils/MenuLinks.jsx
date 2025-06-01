@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { IoIosArrowDown } from "react-icons/io";
+import { useDispatch } from "react-redux";
+import { setProductCategory } from "../../slices/categorySlice";
 
 const MenuLinks = () => {
   const [menus, setMenus] = useState([
@@ -15,6 +16,8 @@ const MenuLinks = () => {
     { id: 4, name: "Contact", path: "/contact" },
   ]);
 
+  const dispatch = useDispatch();
+
   useEffect(() => {
     fetch("https://dummyjson.com/products/categories")
       .then((res) => res.json())
@@ -22,6 +25,7 @@ const MenuLinks = () => {
         const newMenus = [...menus];
         newMenus[1].subMenus = data;
         setMenus(newMenus);
+        dispatch(setProductCategory(data));
       });
   }, []);
 
@@ -47,7 +51,7 @@ const MenuLinks = () => {
                 <li key={subMenu.slug} className="my-1">
                   <NavLink
                     className="text-sm text-gray-scale-gray-500 leading-[150%] font-medium hover:text-branding-success hover:pl-3 transition-all duration-300"
-                    to={subMenu.slug}
+                    to={`/category/${subMenu.slug}`}
                   >
                     {subMenu.name}
                   </NavLink>

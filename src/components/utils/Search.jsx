@@ -30,7 +30,7 @@ const Search = () => {
       </button>
 
       <div
-        className={`searchArea fixed inset-0 bg-gray-scale-white/65 backdrop-blur-[1px] z-10 lg:p-20 transition-all duration-300 ${
+        className={`searchArea fixed inset-0 h-screen overflow-auto bg-gray-scale-white/65 backdrop-blur-[1px] z-10 lg:p-20 transition-all duration-300 ${
           !open
             ? "translate-y-[100%] opacity-0 invisible"
             : "translate-y-[0%] opacity-100 visible"
