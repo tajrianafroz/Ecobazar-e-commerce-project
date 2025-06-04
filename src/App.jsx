@@ -6,7 +6,7 @@ import Homepage from "./pages/Homepage";
 import Shop from "./pages/Shop";
 import Contact from "./pages/Contact";
 import Categories from "./pages/Categories";
-import SingleProduct from './pages/SingleProduct';
+import SingleProduct from "./pages/SingleProduct";
 
 const App = () => {
   return (

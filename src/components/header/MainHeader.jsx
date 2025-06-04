@@ -52,12 +52,20 @@ const MainHeader = () => {
               </Link>
             </li>
             <li className="relative hidden lg:block">
-              <Link>
+              <button className="cursor-pointer" onClick={showOffcanvas}>
                 <SlHandbag />
                 <div className="cartCounter absolute top-[-5px] right-[-8px] text-center text-[10px] font-medium leading-[18px] text-gray-scale-white w-[18px] h-[18px] rounded-2xl border border-gray-scale-white bg-branding-success-dark">
                   2
                 </div>
-              </Link>
+              </button>
+              <Offcanvas
+                position="left"
+                showCanvas={showCanvas}
+                closeOffcanvas={closeOffcanvas}
+                heading="Shopping Card"
+              >
+                <MenuLinks />
+              </Offcanvas>
             </li>
             <li>
               <Link>
@@ -73,7 +81,7 @@ const MainHeader = () => {
               <MdMenuOpen />
             </button>
             <Offcanvas
-              position="left"
+              position="right"
               showCanvas={showCanvas}
               closeOffcanvas={closeOffcanvas}
               heading="Ecobazar"
